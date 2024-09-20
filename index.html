@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWR chain</title>
+    <link rel="icon" href="Screenshot 2024-08-30 104308.png">
+    <style>
+        #wrapper {
+            /* background-color: rgb(58, 27, 59); */
+        }
+
+        .gudu {
+            --border-bottom-width: 0px;
+            --border-color: rgba(0, 0, 0, 0);
+            --border-left-width: 0px;
+            --border-right-width: 0px;
+            --border-style: solid;
+            --border-top-width: 0px;
+            backdrop-filter: blur(48px);
+            /* background-color: rgb(15, 14, 17); */
+            /* background-color: rgb(242, 242, 253); */
+            background-color: deeppink;
+
+            border-radius: 32px;
+            opacity: 1;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        #kk {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        #kk,
+        p {
+            color: white;
+        }
+
+        #k {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+
+        p {
+            color: white;
+        }
+
+        p:hover {
+            color: blue;
+            cursor: pointer;
+        }
+
+        #l {
+            height: 20px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: blue;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #l:hover {
+
+            background-color: aquamarine;
+        }
+
+        h1 {
+            font-size: larger;
+            font-weight: 900;
+        }
+
+        p {
+            color: black;
+        }
+
+        .dudu {
+            display: flex;
+            justify-content: space-around;
+            background-color: darkorange;
+        }
+
+        #ik {
+            height: 20px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: blue;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #gh {
+            border-radius: 10px;
+        }
+
+        .rotating-image {
+
+            animation: rotateImage 5s linear infinite;
+            /* Set the infinite rotation animation */
+        }
+
+        @keyframes rotateImage {
+            from {
+                transform: rotate(0deg);
+                /* Start from 0 degrees */
+            }
+
+            to {
+                transform: rotate(360deg);
+                /* Complete a full circle */
+            }
+        }
+
+        body {
+            /* background-color: hsl(50, 33%, 25%); */
+            /* background-color: #D0C4FE;; */
+            /* background-color: deepskyblue; */
+
+            background-image: linear-gradient(blue, red);
+            background-image: linear-gradient(to right, red, blue);
+            background-image: linear-gradient(to bottom, orange, white, green);
+        }
+
+        #m {
+            text-align: center;
+        }
+
+        .gudi {
+            text-align: center;
+        }
+
+        .silu {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 100px;
+            /* overflow: hidden; */
+            /* background-color: goldenrod; */
+        }
+
+        .silu {
+            position: relative;
+            animation: mymove 10s infinite linear;
+            width: 100px;
+            height: 100px;
+            /* background: url('oasis.png') no-repeat; */
+            background-size: contain;
+            background-position: left;
+        }
+
+        @keyframes mymove {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        #m {
+            gap: 10px;
+        }
+
+        .hara {
+            display: flex;
+            justify-content: space-evenly;
+            /* max-width: 80%; */
+            /* margin-left: 18px; */
+            background-color: aquamarine;
+        }
+
+        #sa {
+            height: 100px;
+            width: 100px;
+        }
+
+        #a {
+            margin-left: 40px;
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            background: none;
+        }
+
+        /* #la{
+        height: 100px;
+        width: 200px;
+       } */
+        .gudu:hover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0);
+            /* Initially hide the image */
+            transition: filter 0.3s;
+        }
+
+        .hover-area {
+            position: absolute;
+            width: 150px;
+            /* Circle diameter */
+            height: 150px;
+            border-radius: 50%;
+            pointer-events: none;
+            /* So the hover-area doesn't interfere with the mouse events */
+            mix-blend-mode: screen;
+            /* Adjust this to change the effect */
+            background-color: rgba(22, 171, 77, 0.5);
+            /* Visible area around the cursor */
+            display: none;
+            /* Initially hide the hover area */
+        }
+
+        .silu {
+            padding-bottom: 50px;
+            padding-top: 10px;
+        }
+
+        #g {
+            font-style: italic;
+        }
+
+        .hero {
+            text-align: center;
+            font-weight: bolder;
+            padding-bottom: 100px;
+            padding-top: 100px;
+            border: 1px solid black;
+            background-image: radial-gradient(red, blue, green);
+            /* font-size: large; */
+            /* font-size: ; */
+        }
+
+        .lucky {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 0px;
+            background-color: coral;
+        }
+
+        /* #subha,h1,p{
+           text-align: center;
+
+        } */
+        /* #subha,img{
+            height: 200px;
+            width: 400px;
+         } */
+        #af {
+            height: 400px;
+            width: 400px;
+        }
+
+        .alokesh {
+            text-align: center;
+            font-weight: bolder;
+            padding-bottom: 100px;
+            padding-top: 100px;
+            border: 1px solid black;
+            background-image: radial-gradient(yellow, deepskyblue, deeppink);
+        }
+
+        .satya {
+            display: flex;
+            justify-content: space-around;
+            background-color: darkolivegreen;
+
+        }
+
+        .chunnu {
+            text-align: center;
+            font-weight: bolder;
+            padding-bottom: 100px;
+            padding-top: 100px;
+            background-image: linear-gradient(blue, red);
+            background-image: linear-gradient(to right, red, blue);
+            background-image: linear-gradient(to bottom, orange, white, green);
+        }
+
+        .prakash {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 columns */
+            grid-template-rows: repeat(2, 1fr);
+            /* 2 rows */
+            gap: 10px;
+            row-gap: 80px;
+            margin-left: 60px;
+
+
+        }
+
+        #appp {
+            text-align: center;
+            height: 500px;
+            width: 400px;
+            background-color: darkseagreen;
+            border-radius: 10px;
+        }
+
+        #vc {
+            height: 350px;
+            width: 200px;
+        }
+
+        .ludu {
+            padding-top: 150px;
+            margin-left: 70px;
+            /* font-size: larger;
+            font-weight: bolder; */
+
+        }
+
+        #lolo {
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        #uniqueId {
+            display: inline-block;
+            /* Makes the link behave like a block-level element */
+            padding: 10px 20px;
+            /* Adds space inside the box */
+            background-color: dimgrey;
+            /* Background color of the box */
+            color: white;
+            /* Text color */
+            text-decoration: none;
+            /* Removes the underline from the link */
+            border-radius: 10px;
+            /* Rounds the corners of the box */
+            border: 2px solid #0056b3;
+            /* Adds a border around the box */
+            /* padding-left: 200px; */
+        }
+
+        #uniqueId:hover {
+            background-color: #0056b3;
+            /* Changes the background color on hover */
+            border-color: #003f7f;
+            /* Changes the border color on hover */
+        }
+
+        .sibun {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 100px;
+        }
+
+        .licky {
+            padding-left: 50px;
+        }
+
+        .sibun {
+            background-image: radial-gradient(yellow, deepskyblue, deeppink);
+            /* padding-top: 100px; */
+            padding-top: 100px;
+        }
+
+        .luddu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: gray;
+            padding: 20px;
+        }
+
+        .luddu h3,
+        .luddu p,
+        .luddu a {
+            color: white;
+        }
+
+        .luddu a:hover {
+            color: aqua;
+        }
+
+        .asas,
+        h4 {
+
+            color: white;
+
+        }
+
+        .asas,
+        h4:hover {
+            color: aqua;
+        }
+
+        .prakash {
+            /* width: 300px; */
+            /* Set the desired width */
+            /* height: 300px; */
+            /* Set the desired height */
+            overflow: hidden;
+        }
+
+        .prakash img {
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease-in-out;
+        }
+
+        .prakash:hover img {
+            transform: rotate(360deg);
+        }
+        .lipi{
+            text-align: center;
+            /* background-color: #008080; */
+            /* background-color: #191970; */
+            /* background-color: #008080; */
+            background-color: hsl(210, 29%, 25%);
+        }
+    </style>
+</head>
+
+<body>
+    <scipt src="script.js"></scipt>
+    <div id="wrapper">
+        <div class="gudu">
+            <div id="k"><img src="asd.png" height="20px" width="60px"></div>
+            <div id="kk">
+                <p>Projects</p>
+                <p>Whitepaper</p>
+                <p>Docs</p>
+                <p>ETH+</p>
+                <p>BTC+</p>
+                <p>Explorer</p>
+                <p id="l">
+                    <buttom>Get Wallets</buttom>
+                </p>
+            </div>
+        </div>
+        <div class="dudu">
+            <!-- <div id="q">
+                <h1>Join The Internet
+                    Of Web3
+                </h1>
+                <p>A robust smart-contract agnostic blockchain with limitless.
+                    interoperable virtual machines, ensuring unfettered innovation
+                    without compromising core performance.
+                </p>
+
+                <buttom>Get Wallet</buttom>  <button>Partner w/pr</button>
+
+                <span><a href="https://www.pwrlabs.io/ "><img src="telegram.jpg" height="20px" width="20px"></a><a href="https://www.pwrlabs.io/"><img src="twitter.png" height="20px" width="20px"></a><a href="https://www.pwrlabs.io/"><img src="github.png" height="20px" width="20px"></a></span>
+            </div> -->
+
+            <div id="q">
+                <h1 id="g">Join The Internet Of Web3</h1>
+
+                <p>
+                    A robust smart-contract agnostic blockchain with limitless,<br>
+                    interoperable virtual machines, ensuring unfettered <br>
+                    innovation without compromising core performance.
+                </p>
+
+
+                <button id="ik">Get Wallet</button>
+                <button id="gh">Partner w/pr</button><br>
+                <br>
+
+                <span id="m">
+                    <a href="https://www.pwrlabs.io/">
+                        <img src="telegram.jpg" alt="Telegram" height="20px" width="20px">
+                    </a>
+                    <a href="https://www.pwrlabs.io/">
+                        <img src="twitter.png" alt="Twitter" height="20px" width="20px">
+                    </a>
+                    <a href="https://www.pwrlabs.io/">
+                        <img src="github.png" alt="GitHub" height="20px" width="20px">
+                    </a>
+                </span>
+            </div>
+            <div class="juju">
+                <img src="kk.png" class="rotating-image" height="100px" width="200px">
+            </div>
+
+        </div>
+        <br>
+        <div class="gudi">
+            <h2>Backed By:</h2>
+        </div>
+
+        <div class="silu">
+            <img src="oasis.png">
+            <img src="crypto oasis.png">
+            <img src="stakez capital.png">
+            <img src="gvc capital.png">
+            <img src="kiiki.png">
+            <img src="drapper assests.png">
+            <img src="lolololo.png">
+        </div>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8XZ514822"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { window.dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-Y8XZ514822');
+        </script>
+
+        <div class="hara">
+            <div id="a">
+                <img id="sa" src="universal development.avif">
+
+                <h2>Universal
+                    Development</h2>
+
+                <p>Develop and deploy VMs
+                    or smart contracts in any
+                    language and framework.</p>
+            </div>
+            <div id="a">
+                <img id="sa" src="limitless.avif">
+                <h2>Limitless
+                    Virtual Machines</h2>
+
+                <p>Develop on public virtual machines
+                    or deploy custom ones
+                    to suit your use case.</p>
+            </div>
+            <div id="a">
+                <img id="sa" src="interaperability.avif">
+                <h2>Universal
+                    Development</h2>
+
+                <p>Develop and deploy VMs
+                    or smart contracts in any
+                    language and framework.</p>
+            </div>
+            <div id="a">
+                <img id="sa" src="efficency.avif">
+                <h2>Interoperability
+                    Unleashed</h2>
+
+                <p>Seamless, instant, and secure
+                    interaction between VMs
+                    on the PWR Chain.</p>
+            </div>
+            <!-- <div id="a">
+                <img id="sa" src="universal development.avif">
+                <h2>Universal 
+                    Development</h2>
+
+             <p>Develop and deploy VMs
+                 or smart contracts in any
+                  language and framework.</p>
+            </div> -->
+        </div>
+
+        <div class="hero">
+            <h1>PWR Chain Infrastructure</h1>
+        </div>
+
+        <div class="lucky">
+            <div id="subha">
+                <img id="af" src="baselayer.avif">
+                <h1>PWR Chain Baselayer</h1>
+                <ul>
+                    <li>Handling 300,000+ TPS</li>
+                    <li>Instant finality, front running protection &
+                        unshakable security</li>
+                    <li>Validation, txn storage and connecting layer for all
+                        the External Virtual Machines deployed on it</li>
+                </ul>
+            </div>
+            <div id="subha">
+                <img id="af" src="baselayer.avif">
+                <h1>PWR Chain Baselayer</h1>
+                <ul>
+                    <li>Smart contract development environments</li>
+                    <li>Inherits base layer's security and performance
+                        optimization</li>
+                    <li>Instant, decentralized, and secure interactions with
+                        different External Virtual Machines </li>
+                    <li>Highly customizable development in any language
+                        or framework</li>
+                </ul>
+            </div>
+            <div id="subha">
+                <img id="af" src="smart.avif">
+                <h1>PWR Chain Baselayer</h1>
+                <ul>
+                    <li>Digital contracts that automate execution of
+                        agreements and allow development of
+                        decentralized applications</li>
+                    <li>Multi-Language Support via diverse External Virtual
+                        Machines with smart contract development in any
+                        programming language</li>
+                    <li>Swift and secure interaction with other smart
+                        contracts and External Virtual Machines</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alokesh">
+            <h1>EFFICENCY FIRST</h1>
+        </div>
+
+
+        <div class="satya">
+            <div id="qww">
+                <h1>$24/month</h1>
+                <p>To run a validator node</p>
+            </div>
+            <div id="qww">
+                <h1>300,000+</h1>
+                <p>Transactions per Second</p>
+            </div>
+            <div id="qww">
+                <h1>$0.00001</h1>
+                <p>Enjoy the lowest fees</p>
+            </div>
+        </div>
+        <div class="chunnu">
+            <h1> Explore the PWR Chain</h1>
+        </div>
+
+        <div class="prakash">
+            <div id="appp">
+                <img id="vc" src="snt.avif">
+                <h1>SNTs - Simple Native Transactions</h1>
+                <p>The smallest and most computationally efficient<br>
+                    transactions on any blockchain, ensuring<br>
+                    efficient data handling</p>
+            </div>
+            <div id="appp">
+                <img id="vc" src="interaperability.avif">
+                <h1>SNTs - Simple Native Transactions</h1>
+                <p>The smallest and most computationally efficient<br>
+                    transactions on any blockchain, ensuring<br>
+                    efficient data handling</p>
+            </div>
+            <div id="appp">
+                <img id="vc" src="pop.avif">
+                <h1>SNTs - Simple Native Transactions</h1>
+                <p>The smallest and most computationally efficient<br>
+                    transactions on any blockchain, ensuring<br>
+                    efficient data handling</p>
+            </div>
+            <div id="appp">
+                <img id="vc" src="mhbs.avif">
+                <h1>SNTs - Simple Native Transactions</h1>
+                <p>The smallest and most computationally efficient<br>
+                    transactions on any blockchain, ensuring<br>
+                    efficient data handling</p>
+            </div>
+            <div id="appp">
+                <img id="vc" src="limitless.avif">
+                <h1>SNTs - Simple Native Transactions</h1>
+                <p>The smallest and most computationally efficient<br>
+                    transactions on any blockchain, ensuring<br>
+                    efficient data handling</p>
+            </div>
+            <div id="appp">
+                <img id="vc" src="inflation.avif">
+                <h1>SNTs - Simple Native Transactions</h1>
+                <p>The smallest and most computationally efficient<br>
+                    transactions on any blockchain, ensuring<br>
+                    efficient data handling</p>
+            </div>
+        </div>
+
+        <div class="ludu">
+            <h1 id="lolo">The Future of decentralized systems</h1>
+            <h3>Whether you're an institution, developer, or web3 founder, PWR Chain welcomes you to join the revolution
+                and shape the future<br>
+                together. Request to join the exclusive PWR community (private channel) with founders, builders,
+                researchers, auditors and early<br> supporters.</h3>
+            <a id="uniqueId" href="https://t.me/pwrlabsadmin">Request to join:@pwsrlabadmin </a>
+        </div>
+
+        <div class="sibun">
+            <div id="bc">
+                <h1>PWR CHAIN</h1>
+
+                <p>PWR Chain creates an ecosystem as
+                    <br>broad and interconnected as the <br>internet, moving past platform<br> limitations to enable
+                    boundless<br> innovation.
+                </p>
+                <hr>
+                <p>team@pwrs labs.io</p>
+
+            </div>
+            <div id="bc">
+                <h1>Ecosystem</h1>
+
+                <p>Wallet
+                    <br>Wallet<br>PWR Explorer<br> Ethereum+<br> Bitcoin+.<br>Grants
+                </p>
+
+                <!-- <p>team@pwrs labs.io</p> -->
+
+            </div>
+            <div id="bc">
+                <h1>Documentation</h1>
+
+                <p>GitHub
+                    <br>Docs<br>Whitepaper<br> Litepaper<br> Brand Assets<br>FAQs
+                </p>
+
+                <!-- <p>team@pwrs labs.io</p> -->
+
+            </div>
+            <div id="bc">
+                <h1>Legal</h1>
+
+                <p>Wallet Terms of Use
+                    <br>Wallet Privacy Policy
+                </p>
+
+                <!-- <p>team@pwrs labs.io</p> -->
+
+            </div>
+        </div>
+        <hr>
+        <div class="licky">
+            <p>The information contained on this website is not investment advice. Investing in token sales is a
+                high-risk endeavor and one for which we strongly advise you to consult with<br> your registered
+                investment advisor.</p>
+        </div>
+        <div class="luddu">
+            <div>
+                <h3>FOLLOW ME</h3><br>
+                <a href="https://www.instagram.com/c7_toka_07"><img src="instagram.jpg" height="50px" width="50px"></a>
+                <a href="https://www.linkedin.com/in/hemanta-pradhan-801146296/"><img src="linkdein.png" height="50px"
+                        width="50px"></a>
+                <a href="https://www.facebook.com/Hemantapradhan09?mibextid=ZbWKwL"><img src="facebook.png"
+                        height="50px" width="50px"></a>
+                <a href="https://www.naukri.com/code360/profile/hemantacha"><img src="codingninja.png" height="50px"
+                        width="50px"></a>
+                <a href="ttps://x.com/hemantapxy"><img src="twitter.png" height="50px" width="50px"></a>
+                <br>
+                <p><a href="https://www.naukri.com/code360/profile/hemantacha">© 2023-25 Hemanta Pradhan's' Portfolio.
+                        All rights reserved.</a></p>
+            </div>
+            <div class="asas">
+                <h3>CONTACT ME</h3><br>
+                <h4><img src="call.png" height="15px" width="15px"> +91 8260922913, +91 9075890610</h4>
+                <h4><img src="message.jpg" height="15px" width="15px"> <a
+                        href="https://www.linkedin.com/in/hemanta-pradhan-801146296/">hemantapxy@-india.org,
+                        hackathon@aicte-india.org</a></h4>
+                <h4><img src="location.png" height="15px" width="15px">Puri,Odisha,India.</h4>
+            </div>
+        </div>
+
+        <div class="lipi">
+            <h1 id="banda">ABOUT ME</h1>
+            <img src="pradhan.png"><br>
+            <img src="pradhan x.png"><br>
+            <img src="pradhan y.png">
+            <h1 id="banda">DESIGNED BY FULLSTACK MERN DEVELOPER MR HARAPRASAD SAHOO</h1>
+            <h1 id="banda">IDEA'S' BY BLOCKCHAIN DEVELOPER MR SUBHAJIT PRADHAN</h1>
+            <h1 id="banda">"Brought to life by Hemanta, Haraprasad & Subhajit – A trio of creativity."</h1>
+            <h1 id="banda">FOR ANY QUERY'S' CONTACT MERN DEVELOPER     <img src="call.png" height="15px" width="15px"> :6371918118</h1>
+        </div>
+    </div>
+</body>
+
+</html>
